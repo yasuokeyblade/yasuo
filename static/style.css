@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.chat-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+#messages {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#message-input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#send-btn {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}
+
+
+#messages div {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+#messages div.system-message {
+    color: white;
+    background-color: #333;
+    font-style: italic;
+}
+
+#messages div.user-message {
+    color: #000;
+    background-color: #f4f4f4;
+}
+
+#messages div.connected {
+    color: #00b300;
+}
+
+#messages div.disconnected {
+    color: #ff3333;
+}
